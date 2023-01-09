@@ -20,7 +20,7 @@ Uses SPy 0.23.1
   ```bash
   docker run \
     -v /local/dir:/container/dir \
-    -it public.aml-repo.cms.waikato.ac.nz:443/wairas/spy:0.23.1
+    -it public.aml-repo.cms.waikato.ac.nz:443/wairas/happy-spy:0.23.1
   ```
 
 * If need be, remove all containers and images from your system:
