@@ -1,6 +1,6 @@
 # SPy
 
-Command-line utilities for building/using [spectral python (SPy)](http://www.spectralpython.net/). 
+Docker image for [spectral python (SPy)](http://www.spectralpython.net/). 
 
 Uses SPy 0.23.1
 
