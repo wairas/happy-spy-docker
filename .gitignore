@@ -1,0 +1,7 @@
+*~
+*.swp
+*.iml
+*.bak
+.idea/
+test/
+venv/

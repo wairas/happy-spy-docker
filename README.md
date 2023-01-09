@@ -1,2 +1,7 @@
 # happy-spy-docker
-Docker image for spectral python (SPy)
+Docker images for [spectral python (SPy)](http://www.spectralpython.net/).
+
+Available images:
+
+* [0.23.1](0.23.1)
+
