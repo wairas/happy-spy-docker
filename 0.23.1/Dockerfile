@@ -20,7 +20,7 @@ RUN apt-get update && \
 RUN pip install --no-cache-dir -U numpy==1.24.1 && \
     pip install --no-cache-dir matplotlib==3.6.2 && \
     pip install --no-cache-dir Pillow==9.4.0 && \
-    pip install --no-cache-dir spectral==0.23.1 && |
+    pip install --no-cache-dir spectral==0.23.1 && \
     pip install --no-cache-dir "git+https://github.com/wairas/spy-utilities.git"
 
 COPY bash.bashrc /etc/bash.bashrc
