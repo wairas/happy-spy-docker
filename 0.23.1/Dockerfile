@@ -17,10 +17,13 @@ RUN apt-get update && \
           gnupg && \
     rm -rf /var/lib/apt/lists/*
 
+# base dependencies
 RUN pip install --no-cache-dir -U numpy==1.24.1 && \
     pip install --no-cache-dir matplotlib==3.6.2 && \
     pip install --no-cache-dir Pillow==9.4.0 && \
-    pip install --no-cache-dir spectral==0.23.1 && \
-    pip install --no-cache-dir "git+https://github.com/wairas/spy-utilities.git"
+    pip install --no-cache-dir spectral==0.23.1
+
+# utilities in separate layer, as they will change more often
+RUN pip install --no-cache-dir "git+https://github.com/wairas/spy-utilities.git@540ecd30d5f58c3dc3585da36444475e9f3b4c6c"
 
 COPY bash.bashrc /etc/bash.bashrc
