@@ -24,6 +24,6 @@ RUN pip install --no-cache-dir -U numpy==1.24.1 && \
     pip install --no-cache-dir spectral==0.23.1
 
 # utilities in separate layer, as they will change more often
-RUN pip install --no-cache-dir "git+https://github.com/wairas/spy-utilities.git@540ecd30d5f58c3dc3585da36444475e9f3b4c6c"
+RUN pip install --no-cache-dir "git+https://github.com/wairas/spy-utilities.git@5a1bd7ad412fc460fddaaec5dd286eb92a2955f0"
 
 COPY bash.bashrc /etc/bash.bashrc
